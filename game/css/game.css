@@ -1,0 +1,45 @@
+/* Lumen Drift page chrome: a dark starfield frame around the canvas. The game
+   itself draws everything (HUD, menus, screens) on the canvas, so this file only
+   centers it and keeps it readable at any desktop window size. */
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background: #05070f;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  background:
+    radial-gradient(1200px 700px at 70% -10%, #12203d 0%, transparent 60%),
+    radial-gradient(900px 600px at 10% 110%, #1d1038 0%, transparent 55%),
+    #05070f;
+}
+
+#stage {
+  width: min(1280px, 100vw);
+  padding: 12px;
+}
+
+#game {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  border-radius: 10px;
+  outline: 1px solid #26365c;
+  box-shadow: 0 0 0 1px #0a0f1e, 0 18px 60px rgba(0, 0, 0, 0.65), 0 0 90px rgba(64, 140, 255, 0.12);
+  background: #070b16;
+  cursor: crosshair;
+}
+
+#fallback {
+  color: #cfe8ff;
+  text-align: center;
+}

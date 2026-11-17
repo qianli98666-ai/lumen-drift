@@ -1,0 +1,1 @@
+{"description":"Lumen Drift — an original arcade space-salvage game for make.fun's best-game-01 bounty.","license":"MIT","name":"lumen-drift","scripts":{"check":"node check-gate.mjs out1 out2","start":"node serve.ts"},"type":"module","version":"1.0.0"}
